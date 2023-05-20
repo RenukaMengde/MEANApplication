@@ -1,6 +1,8 @@
 <h1>MEAN Stack Project</h1>
+<button (click)="getData()"  class="btn btn-primary" type="submit">GetData</button>
 
-<div *ngIf="batchDetails">
+
+<div *ngIf="batchDetails" style="margin-top: 2%;">
     <div *ngFor="let val of batchDetails">
         <li>{{val.Batch}} - {{val.Duration}}</li>
     </div>

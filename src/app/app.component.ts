@@ -8,6 +8,7 @@ import { MarvellousService } from './marvellous.service';
 })
 export class AppComponent implements OnInit{
   batchDetails : any;
+  msg : any;
 
   constructor(private obj : MarvellousService)
   {
@@ -16,7 +17,12 @@ export class AppComponent implements OnInit{
 
   ngOnInit() // implements OnInit interface
   {
-     this.obj.getBatches().subscribe(data => {
+     
+  }
+
+  getData()
+  {
+    this.obj.getBatches().subscribe(data => {
       this.batchDetails = data;
     });
   }
