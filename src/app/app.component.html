@@ -1,0 +1,7 @@
+<h1>MEAN Stack Project</h1>
+
+<div *ngIf="batchDetails">
+    <div *ngFor="let val of batchDetails">
+        <li>{{val.Batch}} - {{val.Duration}}</li>
+    </div>
+</div>
